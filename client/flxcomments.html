@@ -1,0 +1,24 @@
+<template name="flxcomments">
+    <!-- Comments -->
+    <a class="addComments mdi-communication-clear-all linkSubDetail glyphicon glyphicon-comment" id="{{_id}}" style="position: relative;left: 5%;">
+        Comments
+    </a>
+
+    {{#if isComment}}
+        <div class="jumbotron" id="Comments{{_id}}" style="width: 94%;left: 3%;position: relative;">
+            {{#each comments}}
+                <div class="list-group-item">
+                    <a class="mdi-action-account-box linkSubDetail" href="#"> By
+                        : {{comment_By}} at {{comment_createAt}}</a>&nbsp;
+                    <p class="list-group-item-text textDetail">
+                        {{comment_text}}
+                    </p>
+                </div>
+            {{/each}}
+            <form class="form-comments form-group has-info">
+                <input class="form-control floating-label" name="comments{{_id}}" type="text" placeholder="Types your comments" style="font-size: small;"><BR>
+            </form>
+        </div>
+        <BR>
+    {{/if}}
+</template>
