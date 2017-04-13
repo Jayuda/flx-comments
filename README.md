@@ -8,6 +8,8 @@ add to each loop your collections
 ```html
 {{>flxcomments isCommentOpen=true}}
 ```
+isCommentOpen=true that means comments windows will open as default and vice versa.
+
 
 add event to save comments
 ```javascript
