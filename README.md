@@ -6,7 +6,7 @@ add jayuda:flx-comments to your project
 ## Usage
 add to each loop your collections
 ```html
-{{>flxcomments}}
+{{>flxcomments isCommentOpen=true}}
 ```
 
 add event to save comments
