@@ -1,6 +1,6 @@
 Package.describe({
     name: 'jayuda:flx-comments',
-    version: '0.1.0',
+    version: '0.1.1',
     summary: "add comment to any collections ",
     git: 'https://github.com/Jayuda/flx-comments',
     documentation: 'README.md'
