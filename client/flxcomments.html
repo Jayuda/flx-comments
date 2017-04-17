@@ -1,8 +1,10 @@
 <template name="flxcomments">
     <!-- Comments -->
-    <a class="addComments mdi-communication-clear-all linkSubDetail glyphicon glyphicon-comment" id="{{_id}}" style="position: relative;left: 5%;">
-        Comments
-    </a>
+    {{#if isCommentOpen}}
+        <a class="addComments mdi-communication-clear-all linkSubDetail glyphicon glyphicon-comment" id="{{_id}}" style="position: relative;left: 5%;">
+            Comments
+        </a>
+    {{/if}}
 
     {{#if isComment}}
         <div id="Comments{{_id}}" style="width: 94%;left: 3%;position: relative;">
@@ -15,7 +17,7 @@
                     </p>
                 </div>
             {{/each}}
-            <form class="form-comments form-group has-info">
+            <form class="form-comments form-group has-info" name="{{_id}}">
                 <input class="form-control floating-label" name="textComments{{_id}}" id="textComments{{_id}}" type="text" placeholder="Types your comments" style="font-size: xx-small;"><BR>
             </form>
         </div>

@@ -1,6 +1,6 @@
 Package.describe({
     name: 'jayuda:flx-comments',
-    version: '0.1.7',
+    version: '0.2.8',
     summary: "add comment to any collections ",
     git: 'https://github.com/Jayuda/flx-comments',
     documentation: 'README.md'
@@ -15,8 +15,7 @@ Package.onUse(function(api){
     api.imply('templating');
     api.addFiles([
         'client/flxcomments.html',
-        'client/flxcomments.js',
-        'client/addComments.js'
+        'client/flxcomments.js'
     ], 'client');
-    api.export('addComments', 'client');
+    api.export('flxcomments', 'client');
 });
