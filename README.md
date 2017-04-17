@@ -15,7 +15,7 @@ add event to save comments
 ```javascript
 "submit form.form-comments": function (e, tpl) {
   e.preventDefault();
-  var textComments = tpl.$('input[name="comments'+this._id+'"]').val();
+  var textComments = tpl.$('input[name="textComments'+this._id+'"]').val();
   if (textComments.length) {
     addComments(this._id, textComments, YOUR_COLLECTIONS);
   }
