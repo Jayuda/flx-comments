@@ -17,7 +17,7 @@ Template.flxcomments.created = function () {
 Template.flxcomments.helpers({
 	isComment: function () {
 		return Session.get("isComment") === this._id || Session.get("isCommentOpen");
-	}
+	},
     isCommentOpen: function () {
 		return !Session.get("isCommentOpen");
 	}
